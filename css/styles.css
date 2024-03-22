@@ -14,18 +14,30 @@ body{
     margin: 0;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
 /* Layout for admin dashboard */
 .wrapper {
     align-items: stretch;
     display: flex;
     width: 100%;
 }
+
 #sidebar {
     max-width: 264px;
     min-width: 264px;
     background: var(--bs-dark);
     transition: all 0.35s ease-in-out;
 }
+
 .main {
     display: flex;
     flex-direction: column;
@@ -35,4 +47,37 @@ body{
     transition: all 0.35s ease-in-out;
     width: 100%;
     background: var(--bs-dark-bg-subtle);
+}
+
+/* Sidebar Element Style */
+
+.sidebar-logo {
+    padding: 1.15rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: 0.875rem;
 }
